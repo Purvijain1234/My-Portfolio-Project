@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white; /* Text color white */
+    background-color: #262525; /* Background color */
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    padding: 0px 100px;
+    margin-right: 60px;
+    position: fixed;
+}
+
+nav ul{
+    float: right;
+}
+
+.list{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+nav li{
+    list-style: none;
+    color: white;
+}
+
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    margin-top: 50% ;
+}
+
+nav li a:hover{
+    transform: scale(1.5)translate(10px);
+    color: #60b2e2;
+    box-shadow: 0 0 2rem #041d52, inset 0 0 2rem #041d52;
+}
+
+nav li a::after, nav .active::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5sec;
+}
+
+nav li a:hover::after, nav .active, nav .active::after{
+    transform: scaleX(1); 
+    color: #60b2e2;      
+}
+
+.header {
+    color: #60b2e2;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    background-color: #262525;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+}
+
+.left-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #262525;
+}
+
+.skills1 h3{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.progress-bar{
+    background: rgb(118, 114, 115);
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    background: lightseagreen;
+}
+.progress-bar span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #262525 ;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html{
+    animation: html 1s linear forwards;
+}
+.css{
+    animation: css 1s linear forwards;
+}
+.javascript{
+    animation: javascript 1s linear forwards;
+}
+.python{
+    animation: python 1s linear forwards;
+}
+
+.html span, .css span, .javascript span, .python span{
+    border: 1px solid lightseagreen ;
+}
+
+@keyframes html{
+    100%{
+        width: 88%;
+    }
+}
+
+@keyframes css{
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes javascript{
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes python{
+    100%{
+        width: 80%;
+    }
+}
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      width: 400px;
+      height: 400px;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .skill {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: conic-gradient(lightseagreen var(--percent), #d3d3d3 0%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border: 5px solid #262626;
+    }
+
+    .skill::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: #262525;
+      border-radius: 50%;
+    }
+
+    .skill span {
+      position: absolute;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      z-index: 1; 
+    }
+
+    .skill[data-skill]::before {
+      content: attr(data-skill);
+      position: absolute;
+      bottom: -25px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #6e6464;
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        width: 300px;
+        height: 300px;
+      }
+
+      .skill {
+        width: 120px;
+        height: 120px;
+      }
+
+      .skill::after {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="List1">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="hometown.html">Hometown</a></li>
+                <li><a href="Hometownroute.html">Hometown Route</a></li>
+            </ul>
+        </div>
+        </nav>
+        </header>
+        <header class="header">
+            <h1>My Skills</h1>
+        </header>
+
+        <section class="container">
+
+            <section class="left-container">
+                <div class="skills1">
+                <h1>Technical Skills</h1>
+               <h3>HTML <i style="color: orange;" class="fa-brands fa-html5"></i></h3>
+               <div class="progress-bar">
+                   <div class="html"><span>88%</span></div>
+               </div>
+               <h3>CSS <i style="color: rgb(53, 53, 212);" class="fa-brands fa-css3-alt"></i></h3>
+               <div class="progress-bar">
+                   <div class="css"><span>65%</span></div>
+               </div>
+               <h3>JavaScript <i style="color: yellow;" class="fa-brands fa-js"></i></h3>
+               <div class="progress-bar">
+                   <div class="javascript"><span>30%</span></div>
+               </div>
+               <h3>Python <i style="color: green;" class="fa-brands fa-python"></i></h3>
+               <div class="progress-bar">
+                   <div class="python"><span>80%</span></div>
+               </div>
+            </div>
+            </section>
+
+            <section class="right-container">
+                <div class="skills2">
+                    <h1>Professional Skills</h1>
+                    <div class="skills-container">
+                        <div class="skill" data-skill="Creativity" style="--percent: 88%;">
+                          <span>88%</span>
+                        </div>
+                        <div class="skill" data-skill="Problem Solving" style="--percent: 75%;">
+                          <span>75%</span>
+                        </div>
+                        <div class="skill" data-skill="Communication" style="--percent: 80%;">
+                          <span>80%</span>
+                        </div>
+                        <div class="skill" data-skill="Teamwork" style="--percent: 70%;">
+                          <span>70%</span>
+                        </div>
+                      </div>
+                    </div>
+            </section>
+
+        </section> 
+    </header>

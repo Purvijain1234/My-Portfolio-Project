@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badoli, Meerut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: #262525; 
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    padding: 0px 100px;
+}
+
+nav ul{
+    float: right;
+}
+
+.list{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    color: white;
+}
+
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    margin-top: 40% ;
+}
+
+nav li a:hover{
+    transform: scale(1.5)translate(10px);
+    color: #60b2e2;
+    box-shadow: 0 0 2rem #041d52, inset 0 0 2rem #041d52;
+}
+
+nav li a::after, nav .active::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5sec;
+}
+
+nav li a:hover::after, nav .active, nav .active::after{
+    color: #60b2e2;
+    transform: scaleX(1);      
+}
+
+.header {
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #262525;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #041d52, inset 0 4px 6px #041d52;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #60b2e2;
+    font-size: 40px;
+}
+
+
+h2 {
+    color: #376de1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 30px;
+}
+
+.route li strong{
+    color: #60b2e2;
+    font-size: 20px;
+}
+
+p{
+    color: white;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: white;
+    font-size: 17x;
+}
+
+.pictures{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.map iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="List1">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="hometown.html">Hometown</a></li>
+                <li><a href="Hometownroute.html" class="active">Hometown Route</a></li>
+                
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <header class="header">
+        <h1>Welcome to Badoli</h1>
+        <p>Your guide to reaching this charming village in Meerut, India.</p>
+    </header>
+
+    <main>
+        <section class="route">
+            <h2>How to Reach Badoli :</h2>
+            <p>Badoli is easily accessible by road and rail from Meerut and Delhi.</p>
+            <ul>
+                <li><strong>By Car:</strong> Take NH334 from Meerut and follow the route towards Sardhana. From Sardhana, head towards Badoli. <i class="fa-solid fa-car"></i></li>
+                <li><strong>By Train:</strong> The nearest railway station is Meerut City Junction. From there, hire a taxi or take a bus to Badoli. <i class="fa-solid fa-train"></i></li>
+                <li><strong>By Bus:</strong> Regular buses connect Meerut to nearby villages, including Badoli. <i class="fa-solid fa-bus"></i></li>
+            </ul>
+        </section>
+
+        <section class="pictures">
+                <!-- Picture 1 -->
+                <div class="img">
+                    <img src="https://th.bing.com/th/id/OIP.-s3Cgb_iEBm0oW5gkCxr0wHaFj?w=225&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Picture of Badoli" style="width: 240px; height: auto; border-radius: 8px;">
+
+                </div>
+                <!-- Picture 2 -->
+                <div class="img">
+                    <img src="https://th.bing.com/th/id/OIP.xI8Gxdd_FYibsv44WqnfjgHaHk?w=512&h=523&rs=1&pid=ImgDetMain" alt="Another view of Badoli" style="width: 200px; height: 200px; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <h2>Map :</h2>
+            <p>Find the exact route to Badoli on the map below:</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14145.912282343005!2d77.72779843955078!3d29.004727846291807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c682f8f5d5b7f%3A0x0!2zMjnCsDAwJzEwLjEiTiA3N8KwNDMnNTEuOSJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+</body>
+</html>

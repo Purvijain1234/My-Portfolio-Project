@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About me</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: #262525; 
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    padding: 0px 100px;
+    margin-right: 40px;
+}
+
+nav ul{
+    float: right;
+}
+
+.list{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+nav li{
+    list-style: none;
+    color: white;
+}
+
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    margin-top: 50% ;
+}
+
+nav li a:hover{
+    transform: scale(1.5)translate(10px);
+    color: #60b2e2;
+    box-shadow: 0 0 2rem #041d52, inset 0 0 2rem #041d52;
+}
+
+nav li a::after, nav .active::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5sec;
+}
+
+nav li a:hover::after, nav .active::after{
+    transform: scaleX(1);  
+    color: #60b2e2;     
+}
+
+.header {
+    color: #60b2e2;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    background-color: #262525;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+main {
+    max-width: 1200px;
+    height: 400px;
+    margin-left: 100px;
+    margin-right:100px;
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #041d52, inset 0 4px 6px #041d52;
+}
+
+.header:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin:auto;
+}
+
+.about-article{
+    color: #bbb;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+span .img1{
+    margin-left: 5%;
+    
+}
+
+span .img2{
+    margin-left: 50%;
+}
+
+.about-btn button{
+    border: 0.1rem solid #60b2e2;
+    font-size: 1.rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    background: #60b2e2;
+    margin-top: 8%;
+}
+
+.about-btn button:hover{
+    background: transparent;
+    color: #60b2e2;
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="List1">
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="hometown.html">Hometown</a></li>
+                    <li><a href="Hometownroute.html">Hometown Route</a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+       
+        <header class="header">
+                <h1>About Me</h1>
+        </header>
+            <main>
+            <section class="about1">
+            <div class="about-content">
+                <div class="about-article">
+                    <p>Hello! I'm Purvi jain.I'm 17 years old, currently I'm pursuing Btech in Artificial Intelligence from BHAI PARMANAND DSEU SHAKARPUR CAMPUS-2, and I did my schooling from SKVNo.1 Gandhinagar Delhi-31. I live in krishna nagar Delhi. I am a passionate, compassion, and intelligence in all aspects of life. I'm more interested about coding and all other creative stuff. </p>
+                   <div class="about-btn"><a href="skills.html"><button>Skills</button></a></div>
+                </div>
+                <div class="about-image">
+                  <span class="img1"><img src="Untitled_design__6_-removebg-preview.png" alt="University image"></span>
+                  <span class="img2"><img src="Untitled_design-removebg-preview.png" alt="metro"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    </body>
+</html>

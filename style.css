@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    padding: 0px 100px;
+    position: fixed;
+    margin-top: 25 px;
+}
+
+nav ul{
+    float: right;
+}
+
+.list{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    color: white;
+}
+
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    margin-top: 0%;
+}
+
+nav li a:hover{
+    transform: scale(1.5)translate(10px);
+    color: #60b2e2;
+    box-shadow: 0 0 2rem #041d52, inset 0 0 2rem #041d52;
+}
+
+nav li a::after, nav .active::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5sec;
+}
+
+nav li a:hover::after, nav .active, nav .active::after{
+    transform: scaleX(1);    
+    color: #60b2e2;   
+}
+
+.home-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container{
+    background: #262525;
+    width: 70%;
+}
+
+.right-container{
+    background:linear-gradient(-45deg ,#3877ff, #262525 80%);
+    width: 30%;
+}
+
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.6rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.icons .fa-brands:hover{
+    box-shadow: 0 0 2rem #041d52, inset 0 0 2rem #041d52;
+    transform: scale(1.1)translate(5px);
+}
+
+.content{
+    margin-left: 3rem;
+}
+
+.content h2{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.content h1{
+    font-size: 4rem;
+    color: #60b2e2;
+}
+
+.content .detail{
+    color: white;
+    font-size: 1.1rem;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn button{
+    border: 0.1rem solid #60b2e2;
+    font-size: 1.rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #60b2e2;
+}
+
+.btn button:hover{
+    background: transparent;
+    color: #60b2e2;
+}
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 28rem;
+}
+
+.circle:nth-child(2){
+    background-image: url(purvi.jpg);
+    background-size: cover;
+    width: 22rem;
+    border: 0.3rem solid white;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff,
+     0 0 2rem #041d52, inset 0 0 2rem #1555e1 ,
+     0 0 4rem #1555e1, inset 0 0 4rem #1555e1;
+}

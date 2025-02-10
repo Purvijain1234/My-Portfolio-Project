@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badoli</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    padding: 0px 100px;
+}
+
+nav ul{
+    float: right;
+}
+
+.list{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    color: white;
+}
+
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+nav li a:hover{
+    transform: scale(1.5)translate(10px);
+    color: #60b2e2;
+    box-shadow: 0 0 2rem #041d52, inset 0 0 2rem #041d52;
+}
+
+nav li a::after, nav .active::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5sec;
+}
+
+nav li a:hover::after, nav .active, nav .active::after{
+    transform: scaleX(1);  
+    color: #60b2e2;     
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #262525; 
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #262525;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #60b2e2;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #041d52, inset 0 4px 6px #041d52;
+
+}
+
+section {
+    margin: 20px 0;
+    padding: 0;
+}
+
+h1 {
+    color: #009688; 
+    margin-left: 10px;
+}
+
+.about{
+    display:flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.para{
+    flex: 1;
+    font-size: medium;
+}
+
+.img1{
+    border-radius: 5px; 
+    width: 250px;
+    height: auto;
+}
+
+.culture{
+    display: flex;
+}
+.para1{
+    margin-left: 30px;
+    font-size: medium;
+    flex: 1;
+}
+.img2{
+    border-radius: 5px; 
+    width: 270px;
+    height: auto;
+}
+.language{
+    display: flex;
+}
+
+.sightseeing{
+    display: flex;
+}
+
+.images{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.img4{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="List1">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="hometown.html" class="active">Hometown</a></li>
+                <li><a href="Hometownroute.html">Hometown Route</a></li>
+                
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <header>
+        <h1>Welcome to Badoli – A Hidden Gem in Meerut</h1>
+        <p><i class="fa-solid fa-map-pin"></i> Meerut, India</p>
+    </header>
+    <main>
+        <h1>About Badoli</h1>
+        <section class="about">
+            <p class="para">My Hometown,Badoli is a quaint village in Meerut District of Uttar Pradesh State,India.Known for its lush greenery and traditional lifestyle, it offers a peaceful escape from urban hustle. The village thrives on its agrarian economy, with fields of wheat, sugarcane, and other crops painting the landscape.Badoli pin code is 245206 and postal head office is kharkhuda.This place is the border of Meerut district and Ghaziabad district. With its blend of simplicity, tradition, and natural beauty, Badoli is a testament to the timeless essence of rural Uttar Pradesh.</p>
+            <img class="img1" src="village1.jpg" alt="Badoli pictures">
+        </section>
+        
+        <h1>Culture</h1>
+        <section class="culture">
+            <img class="img2" src="village2.jpg" alt="Badoli pictures">
+            <p class="para1">Badoli is a treasure trove of traditional culture and rural charm. Known for its agricultural lifestyle, the villagers lead a simple and harmonious life centered around farming and community bonding. Festivals like Holi, Diwali, and Dussehra are celebrated with great enthusiasm, featuring folk dances, music, and colorful rituals. The local cuisine, with dishes like makki ki roti and gud laddoos, reflects the rich flavors of North India. Religious devotion plays a significant role in daily life, with temples serving as hubs for spiritual and social activities.</p>
+        </section>
+
+        <h1>Language</h1>        
+        <section class="language">
+            <p class="para">The most spoken language in Badoli is Hindi,the official language of Uttar Pradesh and a major language in northern India. Alongside Hindi, the local dialect of Western Hindi, often referred to as Khari Boli, is commonly spoken by the villagers. This dialect reflects the cultural and linguistic richness of the region. Urdu may also be understood or spoken by some, given its historical significance in the area. The linguistic landscape of Badoli is a testament to the rich traditions and heritage of rural Uttar Pradesh.</p>
+            <img class="img1" src="village3.jpg" alt="Badoli pictures">
+        </section>
+
+        <h1>Nearby Sightseeing</h1>
+        <section class="sightseeing">
+            <img class="img2" src="village4.jpg" alt="Badoli pictures">
+            <p class="para1"> Badoli is surrounded by several notable sightseeing destinations that reflect the region's historical and cultural significance. One of the prominent attractions nearby is the Augharnath Temple, also known as the "Kali Paltan Mandir," located in Meerut city.The Hastinapur Wildlife Sanctuary, located a short drive away, is ideal for nature lovers, offering a chance to spot diverse flora and fauna. These places, coupled with the rustic charm of Badoli, make the area an appealing destination for visitors seeking a mix of history, spirituality, and nature.</p>
+        </section>
+        <section class="images">
+            <img class="img4" src="temple2.jpg" alt="Badoli pictures">
+            <img class="img4" src="temple1.png" alt="Badoli pictures">
+            <img class="img1" src="temple3.png" alt="Badoli pictures">
+            <img class="img1" src="village5.jpg" alt="Badoli pictures">
+        </section>
+        
+    </main>
+</body>
+</html>
