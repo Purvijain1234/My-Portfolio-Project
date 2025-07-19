@@ -1,5 +1,5 @@
 # 🏡 My-Portfolio-Project
-This is my personal Portfolio Website, where I share about my skills and information of my Hometown. This is a **basic static website** built as part of my **Semester 1 college project**. It highlights my hometown, important routes, cultural places, temples, and a bit about me and my skills.
+This is my personal Portfolio Website, where I share about my skills and information of my Hometown. This is a basic static website built as part of my **Semester 1 college project**. It highlights my hometown, important routes, cultural places, temples, and a bit about me and my skills.
 
 ---
 
@@ -17,6 +17,7 @@ This is my personal Portfolio Website, where I share about my skills and informa
 ## 📂 **Project Structure**
 
 📂 Hometown-Website
+
 ┣ 📜 index.html
 
 ┣ 📜 about.html
