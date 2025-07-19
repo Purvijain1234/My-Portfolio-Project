@@ -29,27 +29,7 @@ This is my personal Portfolio Website, where I share about my skills and informa
 
 ┣ 📜 style.css
 
-┣ 📂 images
-
-┃ ┣ 📜 Untitled_design-removebg-preview.png
-
-┃ ┣ 📜 Untitled_design__6_-removebg-preview.png
-
-┃ ┣ 📜 temple1.png
-
-┃ ┣ 📜 temple2.jpg
-
-┃ ┣ 📜 temple3.png
-
-┃ ┣ 📜 village1.jpg
-
-┃ ┣ 📜 village2.jpg
-
-┃ ┣ 📜 village3.jpg
-
-┃ ┣ 📜 village4.jpg
-
-┃ ┗ 📜 village5.jpg
+┗📂 images
 
 
 ## 🚀 Pages
