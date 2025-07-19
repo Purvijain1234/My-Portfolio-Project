@@ -7,6 +7,7 @@ This is my personal Portfolio Website, where I share about my skills and informa
 
 ✅ Multi-page website  
 ✅ About me and my hometown 
+
 ✅ Route map information  
 ✅ Temple and village photo gallery  
 ✅ Clean and simple design  
